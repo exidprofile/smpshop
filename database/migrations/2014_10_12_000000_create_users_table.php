@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('avatar')->default('default.jpg');
             $table->tinyInteger('level')->default(3);
             $table->rememberToken();
-            $table->timestamp('created_at')->nullable()->default(0);
+            $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
     }
