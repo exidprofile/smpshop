@@ -21,7 +21,7 @@ class CreateThemeOptionsTable extends Migration
             $table->string('pageTitle');
             $table->string('email');
             $table->text('faq')->nullable();
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
     }

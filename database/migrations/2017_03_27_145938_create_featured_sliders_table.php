@@ -20,7 +20,7 @@ class CreateFeaturedSlidersTable extends Migration
             $table->string('desc',150);
             $table->string('link');
             $table->string('buttontext')->default('More');
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
     }
