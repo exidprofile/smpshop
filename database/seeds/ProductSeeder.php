@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Factory;
+
 class ProductSeeder extends Seeder
 {
     /**
@@ -11,7 +11,7 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-    	$faker = Factory::create();
+    	$faker = Faker\Factory::create();
     	DB::table('products')->insert(
     		[
     		[

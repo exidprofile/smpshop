@@ -22,9 +22,9 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
         View::share('publicURL',getenv('PUBLIC_URL'));
         View::share('adminURL',getenv('ADMIN_URL'));
-        // View::share('catList',Category::all());
-        // View::share('brandList',Brand::all());
-        // View::share('paymentList',Payment::all());
+        View::share('catList',Category::all());
+        View::share('brandList',Brand::all());
+        View::share('paymentList',Payment::all());
         Validator::extend('numberfileupload', function ($attribute, $value, $parameters, $validator) {
             // dd($value);
             $uploadCount = count($value);

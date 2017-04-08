@@ -70,7 +70,7 @@
                 <ul class="footer-bottom-top social" style="color:#fff">
                     &copy; 2017 Smartphone LV Shop.
                 </ul>
-                <p class="footer-class">Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> | Modified by <a href="http://facebook.com/levienthuong" target="_blank">Thuong Le</a></p>
+                <p class="footer-class">eCommerce Website Project - VinaEnterEdu Center - Coded by <a href="http://facebook.com/levienthuong" target="_blank">Thuong Le</a> - PHP 28</p>
                 <div class="clearfix"> </div>
             </div>
         </div>

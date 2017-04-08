@@ -12,7 +12,6 @@ use App\Http\Requests\ContactFormRequest;
 class IndexController extends Controller
 {
     public function index(){
-        return "Hello";
         $theme = FeaturedSlider::all();
         $products = Product::all();
         // dd($theme);

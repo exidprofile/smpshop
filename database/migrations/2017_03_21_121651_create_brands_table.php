@@ -17,7 +17,7 @@ class CreateBrandsTable extends Migration
             $table->increments('id');
             $table->string('brand_name');
             $table->string('brand_desc')->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
     }

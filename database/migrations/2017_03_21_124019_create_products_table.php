@@ -31,7 +31,7 @@ class CreateProductsTable extends Migration
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
             $table->integer('discount')->nullable();
             $table->string('tags',250)->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
     }
