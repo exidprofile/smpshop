@@ -19,8 +19,7 @@ class CreateAdvertisementsTable extends Migration
             $table->string('ads_title');
             $table->string('ads_image');
             $table->string('ads_desc');
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->timestamps();
         });
     }
 
